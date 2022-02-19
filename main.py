@@ -73,7 +73,8 @@ for layer in [blue, green, red]:
 dst=np.uint8(np.delete(dst,0,axis=2))
 rest=np.uint8(np.delete(rest,0,axis=2))
 
-
+cv2.imwrite("blur.jpg", dst)
+cv2.imwrite("restored.jpg", rest)
 
 
 cv2.imshow("orig", image)
